@@ -1,4 +1,10 @@
+<img width="3785" height="2065" alt="image" src="https://github.com/user-attachments/assets/295dd729-0450-4782-b6d1-6f4ac971fa76" />
+
+
+
 # فرنود بوک (Farnod Book) - Persian Online Book Store
+
+
 
 A modern, responsive Persian online book store website featuring both physical and audiobooks. This project demonstrates a complete e-commerce book store with Persian language support and RTL (Right-to-Left) layout.
 
@@ -205,3 +211,4 @@ book demo/
 2. Include the standard header and footer structure
 3. Add corresponding CSS files in `styles/` directory
 4. Update navigation links in all pages
+
