@@ -1,0 +1,255 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/home.css" />
+        <link rel="stylesheet" href="../styles/details.css" />
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <title>تمرین یوتیوب </title>
+    </head>
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="header-container">
+                <a href="home.html" class="logo-container">
+                    <img class="logo" src="../assets/images/logo.png">
+                </a>
+
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input
+                        class="search"
+                        id="search"
+                        placeholder="جستجوی کتاب ..."
+                        onkeydown="handleSearch(event)" />
+                </div>
+
+                <div class="nav-links">
+                    <a href="home.html">خانه</a>
+                    <a href="about.html">درباره ما</a>
+                    <a href="contact.html">تماس با ما</a>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- menu mobile  -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header">
+                <a href="home.html" class="logo-container">
+                    <img class="logo" src="../assets/images/logo.png">
+                </a>
+                <div class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="mobile-nav-links">
+                <a href="home.html">خانه</a>
+                <a href="about.html">درباره ما</a>
+                <a href="contact.html">تماس با ما</a>
+                <a href="#" id="mobileCartBtn"> سبد خرید </a>
+
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+        <!-- shopping cart menu -->
+        <div class="cart-sidebar" id="cartSidebar">
+            <!-- header سبد خرید -->
+            <div class="cart-header">
+                <h3>سبد خرید شما</h3>
+                <div class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <!-- لیست آیتم‌ها -->
+            <div class="cart-items" id="cartItems">
+                <div class="empty-cart">
+                    <p>سبد خرید شما خالی است</p>
+                </div>
+            </div>
+
+            <!-- مجموع و دکمه تکمیل خرید -->
+            <div class="cart-total">
+                مجموع : <span id="cartTotal">0 تومان</span>
+                <div class="checkout-btn-container">
+                    <button class="checkout-btn">تکمیل خرید</button>
+                </div>
+            </div>
+        </div>
+
+        <!--menu section-->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header">
+                <a href="home.html" class="logo-container">
+                    <img src="../assets/images/logo.png" class="logo"
+                        alt="farnod-book" />
+                </a>
+                <div class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="mobile-nav-links">
+                <a href="home.html">خانه</a>
+                <a href="about.html">درباره</a>
+                <a href="contact.html">تماس با ما</a>
+            </div>
+
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+      
+
+        <!--hero-section-->
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-right"></div>
+                <div class="hero-content">
+                    <h3>بیش از ده هزار کتاب صوتی و متنی</h3>
+                    <p>کتاب های رایگان و پولی</p>
+                    <button>ثبت نام</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!--categories-section-->
+
+        <section class="categories">
+            <h2 class="title-section">دسته‌بندی</h2>
+            <div class="category-boxes">
+
+                <a href="category.html?category=رمان" class="category-card">
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <h3>رمان</h3>
+                    <p>۱۲۰۰ کتاب</p>
+                </a>
+
+                <a href="category.html?category=کسب و کار"
+                    class="category-card">
+                    <div class="icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>کسب و کار</h3>
+                    <p>۸۰۰ کتاب</p>
+                </a>
+
+                <a href="category.html?category=روانشناسی"
+                    class="category-card">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>روانشناسی</h3>
+                    <p>۹۵۰ کتاب</p>
+                </a>
+
+                <a href="category.html?category=آموزشی" class="category-card">
+                    <div class="icon"><i
+                            class="fas fa-graduation-cap"></i></div>
+                    <h3>آموزشی</h3>
+                    <p>۶۵۰ کتاب</p>
+                </a>
+
+                <a href="category.html?category=جنایی" class="category-card">
+                    <div class="icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>جنایی</h3>
+                    <p>۵۰۰ کتاب</p>
+                </a>
+            </div>
+        </section>
+
+        <!--children books section-->
+        <section class="children">
+            <h2 class="title-section">کتاب های مخصوص کودکان و نوجوانان</h2>
+            <div class="slider-wrapper">
+                <button class="btn btn-prev" id="prevBtn" disabled>‹</button>
+                <div class="slider-container" id="slider">
+                    <!-- کارت‌ها با JS ساخته می‌شوند -->
+                </div>
+                <button class="btn btn-next" id="nextBtn">›</button>
+            </div>
+        </section>
+
+        <!--auido books section-->
+        <section class="hot-books-section">
+            <h2 class="title-section">داغ‌ترین کتاب‌های صوتی</h2>
+            <div class="books-grid" id="hotBooksGrid">
+                <!-- کتاب‌ها اینجا رندر می‌شوند -->
+            </div>
+        </section>
+
+        <!-- banner section-->
+        <div class="banner">
+            <div class="banner-container">
+                <div class="banner-img">
+                    <img src="../assets/images/banner-1.jpg" />
+                </div>
+                <div class="banner-img">
+                    <img src="../assets/images/banner-2.jpeg" />
+                </div>
+            </div>
+        </div>
+
+        <!--footer section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- درباره ما -->
+                <div class="footer-about">
+                    <h3>فرنود بوک</h3>
+                    <p>
+                        فروشگاه اینترنتی کتاب فرنود بوک جایی برای خرید آنلاین و
+                        دانلود کتاب صوتی و الکترونیکی است.
+                        در کتاب‌فروشی آنلاین فرنود بوک هزاران کتاب گویا و
+                        الکترونیکی در دسترس است که در میان آن‌ها کتاب رایگان هم
+                        وجود دارد.
+                        شما می‌توانید کتاب‌ها را خریداری کرده یا امانت بگیرید و
+                        در موبایل، تبلت، رایانه یا سایت بخوانید و بشنوید.
+                    </p>
+                </div>
+
+                <!-- دسته‌بندی‌ها -->
+                <div class="footer-categories">
+                    <h4>دسته‌بندی‌ها</h4>
+                    <ul>
+                        <li><i class="fas fa-book"></i> رمان</li>
+                        <li><i class="fas fa-briefcase"></i> کسب و کار</li>
+                        <li><i class="fas fa-brain"></i> روانشناسی</li>
+                        <li><i class="fas fa-graduation-cap"></i> آموزشی</li>
+                        <li><i class="fas fa-user-secret"></i> جنایی</li>
+                    </ul>
+                </div>
+
+                <!-- ارتباط با ما -->
+                <div class="footer-contact">
+                    <h4>ارتباط با ما</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>
+                            info@farnodbook.com</li>
+                        <li><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</li>
+                        <li><i class="fas fa-building"></i> تهران، ایران</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 فرنود بوک. تمامی حقوق محفوظ است.</p>
+            </div>
+        </footer>
+
+        <script src="../js/app.js"></script>
+        <script src="../js/details.js"></script>
+        <script src="../js/search.js"></script>
+
+    </body>
+</html>
