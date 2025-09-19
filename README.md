@@ -219,13 +219,9 @@ This is a demo project, but suggestions and improvements are welcome:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Contact
 
-For questions about this project:
-- **Email**: info@farnodbook.com
-- **Phone**: ۰۲۱-۱۲۳۴۵۶۷۸
-- **Location**: تهران، ایران
 
 ---
 
 **فرنود بوک** - Your gateway to the world of Persian literature and knowledge! 📚✨
+
